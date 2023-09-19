@@ -46,6 +46,7 @@
             <img id="Scene-6" src="./Style/Images/Scene-6.jpg">
             <img id="Scene-7" src="./Style/Images/Scene-7.jpg">
             <img id="Scene-8" src="./Style/Images/Scene-8.jpg">
+            <img id="Scene-9" src="./Style/Images/Scene-9.jpg">
 
         </a-assets>
 
@@ -152,9 +153,10 @@
             </a-plane>
 
             <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
-                position="-3.22318 -1.72806 5.31659" rotation="-76.20281379460435 103.19542848101257 167.05673136849902"
-                the_dote="Name_of_dote: Dote-8 ; Group_to_activate: Group-8 ; The_rotation: 0">
+                position="-0.24916 -1.72806 1.57651" rotation="-86.60486256520446 -156.81167303376475 66.65905580111023"
+                the_dote="Name_of_dote: Dote-9 ; Group_to_activate: Group-9 ; The_rotation: 0">
             </a-plane>
+
 
         </a-entity>
         <!-- Group-5 -->
@@ -215,9 +217,28 @@
             </a-plane>
 
             <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
-                position="2.69933 -1.56756 -5.24384" rotation="-76.33516704527958 -94.98838102355866 5.196154244041436"
+                position="2.38636 -1.56756 -3.65837" rotation="-76.33516704527958 -94.98838102355866 5.196154244041436"
+                the_dote="Name_of_dote: Dote-9 ; Group_to_activate: Group-9 ; The_rotation: 0">
+            </a-plane>
+
+
+        </a-entity>
+        <!-- Group-9 -->
+        <a-entity scale="0 0 0" class="groups" id="Group-9" visible="false">
+
+            <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
+                position="-2.68644 -1.56756 3.14968" rotation="-71.46273395548705 93.70438260467049 176.83540205799676"
+                the_dote="Name_of_dote: Dote-8 ; Group_to_activate: Group-8 ; The_rotation: 0">
+            </a-plane>
+
+
+            <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
+                position="-0.17605 -1.25899 -1.77621"
+                rotation="-87.82755450001363 122.81235747070168 147.55496689563117"
                 the_dote="Name_of_dote: Dote-4 ; Group_to_activate: Group-4 ; The_rotation: 0">
             </a-plane>
+
+
 
         </a-entity>
         <!-- ############################################################ -->
@@ -281,6 +302,9 @@
                                 break;
                             case 'Dote-8':
                                 the_sky.setAttribute('src', '#Scene-8')
+                                break;
+                            case 'Dote-9':
+                                the_sky.setAttribute('src', '#Scene-9')
                                 break;
                             default:
                                 break;
