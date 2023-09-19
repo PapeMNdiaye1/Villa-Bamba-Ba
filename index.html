@@ -44,6 +44,8 @@
             <img id="Scene-4" src="./Style/Images/Scene-4.jpg">
             <img id="Scene-5" src="./Style/Images/Scene-5.jpg">
             <img id="Scene-6" src="./Style/Images/Scene-6.jpg">
+            <img id="Scene-7" src="./Style/Images/Scene-7.jpg">
+            <img id="Scene-8" src="./Style/Images/Scene-8.jpg">
 
         </a-assets>
 
@@ -149,6 +151,10 @@
                 the_dote="Name_of_dote: Dote-3 ; Group_to_activate: Group-3 ; The_rotation: 0">
             </a-plane>
 
+            <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
+                position="-3.22318 -1.72806 5.31659" rotation="-76.20281379460435 103.19542848101257 167.05673136849902"
+                the_dote="Name_of_dote: Dote-8 ; Group_to_activate: Group-8 ; The_rotation: 0">
+            </a-plane>
 
         </a-entity>
         <!-- Group-5 -->
@@ -173,17 +179,47 @@
         <a-entity scale="0 0 0" class="groups" id="Group-6" visible="false">
 
             <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
-                position="-0.84425 -1.99621 -3.86596"
+                position="-0.36595 -1.22481 -3.54583"
                 rotation="-86.99218203471288 113.04629185269683 157.33019983835814"
                 the_dote="Name_of_dote: Dote-5 ; Group_to_activate: Group-5 ; The_rotation: 0">
             </a-plane>
+            <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
+                position="-0.36595 -1.22481 4.13207" rotation="-86.99218203471288 113.04629185269683 157.33019983835814"
+                the_dote="Name_of_dote: Dote-7 ; Group_to_activate: Group-7 ; The_rotation: 0">
+            </a-plane>
+            <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
+                position="3.27853 -1.22481 1.00293" rotation="-63.05744310091788 -92.59857406006799 2.664826705153459"
+                the_dote="Name_of_dote: Dote-8 ; Group_to_activate: Group-8 ; The_rotation: 0">
+            </a-plane>
+
+
+
+
+
         </a-entity>
+        <!-- Group-7 -->
+        <a-entity scale="0 0 0" class="groups" id="Group-7" visible="false">
 
+            <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
+                position="-0.36595 -1.22481 -3.54583"
+                rotation="-86.99218203471288 113.04629185269683 157.33019983835814"
+                the_dote="Name_of_dote: Dote-6 ; Group_to_activate: Group-6 ; The_rotation: 0">
+            </a-plane>
+        </a-entity>
+        <!-- Group-8 -->
+        <a-entity scale="0 0 0" class="groups" id="Group-8" visible="false">
 
+            <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
+                position="-3.75724 -1.56756 -0.78206" rotation="-71.46273395548705 93.70438260467049 176.83540205799676"
+                the_dote="Name_of_dote: Dote-6 ; Group_to_activate: Group-6 ; The_rotation: 0">
+            </a-plane>
 
+            <a-plane data-clickable class="Dote" material="src: #Arrow-1; transparent:true"
+                position="2.69933 -1.56756 -5.24384" rotation="-76.33516704527958 -94.98838102355866 5.196154244041436"
+                the_dote="Name_of_dote: Dote-4 ; Group_to_activate: Group-4 ; The_rotation: 0">
+            </a-plane>
 
-
-
+        </a-entity>
         <!-- ############################################################ -->
         <!-- ############################################################ -->
         <!-- ############################################################ -->
@@ -240,7 +276,12 @@
                             case 'Dote-6':
                                 the_sky.setAttribute('src', '#Scene-6')
                                 break;
-
+                            case 'Dote-7':
+                                the_sky.setAttribute('src', '#Scene-7')
+                                break;
+                            case 'Dote-8':
+                                the_sky.setAttribute('src', '#Scene-8')
+                                break;
                             default:
                                 break;
                         }
