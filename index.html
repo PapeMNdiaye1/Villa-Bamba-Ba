@@ -602,10 +602,8 @@
                 let Group_to_activate = this.data.Group_to_activate
                 let TheRotation = this.data.The_rotation
                 let The_Arrow = this.el
-                // this.el.setAttribute('color', '#fff')
                 this.el.setAttribute('event-set__mouseleave', "scale: 0.9 0.9 0.9 ; opacity : 0.5 ")
                 this.el.setAttribute('event-set__mouseenter', "scale: 1.1 1.1 1.1 ; opacity : 1")
-                // this.el.setAttribute('opacity', '0.5')
                 this.el.addEventListener('click', (theDote) => {
 
                     the_sky.setAttribute('rotation', `0 ${TheRotation} 0`)

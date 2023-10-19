@@ -5,6 +5,10 @@
   outline: none;
 }
 
+.a-enter-vr {
+  display: none;
+}
+
 body,
 html {
   width: 100%;
