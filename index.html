@@ -608,6 +608,18 @@
         let img_1 = document.querySelector('#Scene-0')
 
 
+        const setStrat = (theStrat) => {
+            the_sky.setAttribute('src', `#Scene-${theStrat}`)
+            let the_group_to_activate = document.querySelector(`#Group-${theStrat}`)
+            groups.forEach(group => {
+                group.setAttribute('visible', 'false')
+                group.setAttribute('scale', '0 0 0')
+            });
+            the_group_to_activate.setAttribute('visible', 'true')
+            the_group_to_activate.setAttribute('scale', '1 1 1')
+        }
+        setStrat(8)
+
         AFRAME.registerComponent('the_dote', {
             schema: { Name_of_dote: { type: 'string', default: '#Name', }, Group_to_activate: { type: 'string', default: '#Position', }, The_rotation: { type: 'string', default: '0', } },
 
