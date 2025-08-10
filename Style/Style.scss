@@ -33,6 +33,7 @@ html {
   color: #f1f1f1;
   //   font-size: 0.7em;
 }
+
 .a-dialog-allow-button {
   background-color: rgba($color: #4988e2, $alpha: 0.9);
   color: #f1f1f1;
@@ -169,6 +170,13 @@ html {
   display: none;
   width: 0em;
   opacity: 0;
+}
+.fullscreen {
+  display: none;
+}
+.a-enter-vr-button {
+  background-image: url("./Images/PNG/VR-icon.png");
+  display: none;
 }
 
 .a-enter-vr {

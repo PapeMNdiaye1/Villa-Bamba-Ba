@@ -153,6 +153,15 @@ html {
   opacity: 0;
 }
 
+.fullscreen {
+  display: none;
+}
+
+.a-enter-vr-button {
+  background-image: url("./Images/PNG/VR-icon.png");
+  display: none;
+}
+
 .a-enter-vr {
   background: rgba(55, 55, 60, 0);
   display: none;
