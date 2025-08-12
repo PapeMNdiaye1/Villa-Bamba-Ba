@@ -16,6 +16,7 @@ html {
   width: 100%;
   height: 100%;
   font-family: "Roboto", sans-serif;
+  background-color: #222;
 }
 
 .a-dialog {
@@ -33,7 +34,6 @@ html {
   color: #f1f1f1;
   //   font-size: 0.7em;
 }
-
 .a-dialog-allow-button {
   background-color: rgba($color: #4988e2, $alpha: 0.9);
   color: #f1f1f1;
@@ -154,6 +154,14 @@ html {
   cursor: none;
 }
 
+.fullscreen {
+  display: none;
+}
+.a-enter-vr-button {
+  background-image: url("./Images/PNG/VR-icon.png");
+  display: none;
+}
+
 .the_blach_hover {
   width: 100vw;
   height: 0vh;
@@ -170,13 +178,6 @@ html {
   display: none;
   width: 0em;
   opacity: 0;
-}
-.fullscreen {
-  display: none;
-}
-.a-enter-vr-button {
-  background-image: url("./Images/PNG/VR-icon.png");
-  display: none;
 }
 
 .a-enter-vr {
@@ -237,45 +238,50 @@ html {
   }
 }
 
-.the_description {
-  position: absolute;
-  bottom: -200%;
-  left: 2%;
-  z-index: 16;
-  width: 20em;
-  height: auto;
-  background-color: rgba(#f1f1f1, 0.7);
-  padding: 1em;
-  color: #000;
-  @include cent();
-  font-family: "Roboto", sans-serif;
-  border-radius: 0.5em;
-  transition-duration: 0.1s;
-}
-
 .link_to_archviz {
   width: 1.5em;
   height: 1.5em;
-  position: absolute;
-  @include cent();
+  position: fixed;
   bottom: calc(2% + 0em);
-  right: calc(2% + 0em);
+  left: calc(2% + 0em);
+  @include cent();
   z-index: 10;
   padding: 0.3em;
   color: #f1f1f1;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   text-decoration: none;
   background-image: url("./Images/PNG/favicon.png");
   background-repeat: no-repeat;
   background-size: 100%;
+  opacity: 0;
+  transition-duration: 0.7s;
 
   &:hover {
     transform: scale(1.1);
   }
 }
 
-@media all and (max-width: 1000px) {
+.The-Guide {
+  background-image: url("./Images/PNG/Phone-GIF.gif");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  // background-color: red;
+  z-index: 50;
+  width: 16em;
+  height: 10em;
+  position: absolute;
+  margin: auto;
+  bottom: -105%;
+  left: calc(50% - 8em);
+  display: none;
+  opacity: 1;
+  animation-duration: 0.7s;
+  pointer-events: none;
+}
+
+@media all and (max-width: 500px) {
   .The_Image {
     width: 93vw;
     left: 2.5vw;
@@ -306,8 +312,6 @@ html {
     grid-column-gap: 0.5em;
     grid-row-gap: 0.5em;
 
-    // background-color: salmon;
-
     .oneImage {
       margin: auto;
       width: 100%;
@@ -325,5 +329,13 @@ html {
     bottom: 1em;
     right: none;
     left: 1em;
+  }
+
+  .The-Guide {
+    pointer-events: none;
+    display: flex;
+    bottom: calc(30% - 5em);
+    opacity: 1;
+    transition-duration: 0.7s;
   }
 }

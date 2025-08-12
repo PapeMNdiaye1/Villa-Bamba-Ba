@@ -36,7 +36,6 @@
   </head>
 
   <body>
-    <div class="the_description">Villa Bamba Ba</div>
     <div class="hover_loader_container">
       <div class="hover_loader">
         <div class="lds-ellipsis">
@@ -55,6 +54,7 @@
     </a>
 
     <div class="The_Image_Back_Cover"></div>
+    <div class="The-Guide"></div>
 
     <div class="the_blach_hover"></div>
     <a-scene
@@ -870,6 +870,8 @@
     </a-scene>
     <script>
       let loaderContainer = document.querySelector(".hover_loader_container");
+      let theGuide = document.querySelector(".The-Guide");
+      let linkToArchviz = document.querySelector(".link_to_archviz");
 
       let groups = document.querySelectorAll(".groups");
       let the_sky = document.querySelector("#image-360");
@@ -1029,8 +1031,16 @@
       function intFunc() {
         if (img_1.complete) {
           loaderContainer.style.display = "none";
-          console.log(img_1.complete);
           clearInterval(theInt);
+
+          theGuide.style.display = "flex";
+          setTimeout(() => {
+            theGuide.style.opacity = "0";
+          }, "5000");
+          setTimeout(() => {
+            theGuide.style.display = "none";
+            linkToArchviz.style.opacity = "1";
+          }, "6000");
         } else {
           console.log(img_1.complete);
         }
